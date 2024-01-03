@@ -10,6 +10,7 @@ CREATE TABLE `contacts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
+  `fax`   varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `city` varchar(255) DEFAULT NULL,
   `date_created` datetime DEFAULT NULL,
@@ -19,10 +20,10 @@ CREATE TABLE `contacts` (
 LOCK TABLES `contacts` WRITE;
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
 
-INSERT INTO `contacts` (`id`, `name`, `phone`, `email`, `city`, `date_created`)
+INSERT INTO `contacts` (`id`, `name`, `phone`, `fax`, `email`, `city`, `date_created`)
 VALUES
-	(1,'ACME Plumbing','306-555-0101','info@acme.ca','Regina','2023-01-01 00:00:00'),
-	(2,'General Contracting','306-555-8829','sales@generalcontracting.ca','Regina','2023-01-01 00:00:00');
+	(1,'ACME Plumbing','306-555-0101', '306-555-0102','info@acme.ca','Regina','2023-01-01 00:00:00'),
+	(2,'General Contracting','306-555-8829', '306-555-8830', 'sales@generalcontracting.ca','Regina','2023-01-01 00:00:00');
 
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 UNLOCK TABLES;

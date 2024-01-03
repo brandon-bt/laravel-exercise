@@ -29,6 +29,13 @@ class CustomerController extends Controller
           'contacts' => $customer->contacts
       ]);
   }
+
+  //controller method for customer profile
+  public function profile(Request $request, $id){
+
+    $customer = Customer::where('id',$id)->first();
+    return view('profile', ['customer' => $customer]);
+  }
   
 }
 

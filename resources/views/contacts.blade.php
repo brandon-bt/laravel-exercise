@@ -15,7 +15,8 @@
 			<div class="col-md-3">
 				<div class="card p-3">
 					<div><strong>{{$contact->name}}</strong></div>
-					<div>{{$contact->phone}}</div>
+					<div>p:{{$contact->phone}}</div>
+					<div>f:{{$contact->phone}}</div>
 					<div>{{$contact->email}}</div>
 					<div>{{$contact->city}}</div>
 				</div>		

@@ -15,7 +15,7 @@ class Customer extends Model
 	//Define the relationship with contacts
   public function contacts()
   {
-      return $this->belongsToMany(Contact::class, 'customers_contacts', 'customer_id', 'contacts_id');
+      return $this->belongsToMany(Contact::class, 'customers_contacts', 'customer_id', 'contact_id');
   }  
   
   public static function getCustomers() {

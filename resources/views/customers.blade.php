@@ -20,6 +20,7 @@
 				<td>{{$customer['name']}}</td>
 				<td>{{$customer['num_contacts']}}</td>
 				<td><a href="/customers/{{$customer['id']}}/contacts" class="btn btn-primary">View Contacts</a></td>
+				<td><a href="/customers/{{$customer['id']}}/profile" class="btn btn-primary">View Details</a></td>
 			</tr>
 			@endforeach
 		</tbody>
